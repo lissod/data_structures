@@ -1,5 +1,7 @@
 const anagrams = require('./index.js');
 
+// import { anagrams } from './index.js';
+
 test('anagrams function exists', () => {
   expect(typeof anagrams).toEqual('function');
 });

@@ -14,6 +14,13 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+  const stringDimension = n * 2 -1;
+  for(let i = 0; i < n; i++ ) {
+    const hashCount = (2 * i + 1 );
+    const spaceCount = (stringDimension - hashCount) / 2;
+    console.log(' '.repeat(spaceCount) + '#'.repeat(hashCount) + ' '.repeat(spaceCount));
+  }
+}
 
 module.exports = pyramid;
